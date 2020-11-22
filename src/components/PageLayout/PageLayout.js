@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { css } from '@emotion/react'
 
+import PageLayoutColumn from './PageLayoutColumn'
+import PageLayoutRow from './PageLayoutRow'
+
 import baseStyles from './styles'
 
 const PageLayout = ({
@@ -31,5 +34,10 @@ PageLayout.defaultProps = {
   windowMaxHeight: false,
   windowMinHeight: false
 }
+
+PageLayout.displayName = 'PageLayout'
+
+PageLayout.Column = PageLayoutColumn
+PageLayout.Row = PageLayoutRow
 
 export default PageLayout
