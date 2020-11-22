@@ -1,0 +1,42 @@
+{
+  "name": "@cocco3/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "docs, lib"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.1.1",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "@emotion/babel-preset-css-prop": "^11.0.0",
+    "@storybook/addon-actions": "^6.1.2",
+    "@storybook/addon-essentials": "^6.1.2",
+    "@storybook/addon-links": "^6.1.2",
+    "@storybook/react": "^6.1.2",
+    "babel-loader": "^8.2.1",
+    "gh-pages": "^3.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "scripts": {
+    "build": "npm run storybook:build",
+    "start": "npm run storybook:start",
+    "storybook:build": "build-storybook -o ./docs",
+    "storybook:publish": "gh-pages ",
+    "storybook:start": "start-storybook -p 6006",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
